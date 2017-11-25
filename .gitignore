@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+
+src/**/*.css
+
 # dependencies
 /node_modules
 
@@ -8,6 +11,8 @@
 
 # production
 /build
+
+
 
 # misc
 .DS_Store

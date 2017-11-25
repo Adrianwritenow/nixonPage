@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../App.css';
 
 class Footer extends Component {
   render() {
     return (
       <div className="footerWrapper">
-
+        <h4>Footer</h4>
       </div>
     );
   }
