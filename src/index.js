@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import App from './App';
+import Splash from './components/splash';
+import Launch from './components/nixonLaunch';
+
+
+ReactDOM.render(
+  <BrowserRouter>
+       <Switch>
+         <Route exact path="/" component={Splash}/>
+         <Route exact path="/nixonLaunch" component={Launch}/>
+       </Switch>
+   </BrowserRouter>
+
+, document.getElementById('root'));
