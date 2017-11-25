@@ -1,4 +1,45 @@
 body {
-  background: #191516;
+  background: #000000;
   color: blue;
-  background-image: url("http://media.complex.com/campaigns/2014-q4/nixon-spectrum/mobile/nixon_cover.jpg"); }
+  background-image: url("http://media.complex.com/campaigns/2014-q4/nixon-spectrum/mobile/nixon_cover.jpg");
+  background-repeat: no-repeat;
+  background-position: top; }
+
+.button {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: none;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 1em 3em;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Saira Semi Condensed', sans-serif; }
+  .button::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .button::before, .button::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1; }
+  .button:hover {
+    text-decoration: none;
+    color: #FF4C54; }
+  .button::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0; }
+  .button:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%; }
