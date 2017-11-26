@@ -6,7 +6,7 @@ class BaseLayout extends Component {
     return (
       <div className="footerWrapper">
         {this.props.children}
-        <h1> footer</h1>
+        <footer> &#169; 2017 Nixon Inc.</footer>
       </div>
     );
   }

@@ -10,14 +10,8 @@ class Launch extends Component {
 
     return (
       <div className="launchWrapper">
-        <section className="animation-box">
-          <div className="msgWrapper">
-          <div className="welcomeMsg">Welcome to the NIXON family {details.userFirstName}</div>
-          <div className="watchLine">Your custom {details.watchStyle} looks great</div>
-          </div>
-        </section>
         <div className="watchSpecs">
-          <img src="https://theawesomer.com/photos/2008/12/122208_nixon_1.jpg" alt='Your Watch '/>
+        <img  src={require('../images/nixonWatch.png')} alt="the logo"/>
           <ul>
             <li>Watch Movement:<p>{details.watchMovement}</p></li>
             <li>Watch Dial:<p>{details.watchDial}</p></li>
@@ -25,7 +19,8 @@ class Launch extends Component {
             <li>Watch Band:<p>{details.watchBand}</p></li>
           </ul>
         </div>
-          <div className="mediaLine"> Now Take Some Time To Share Your Machine<br/>
+          <div className="mediaLine"> We see you. Get featured by showing us how you #NIXON
+            Instagram or Tweet your photos to join the conversation<br/>
             <div className="social__container">
               <a href="https://www.facebook.com/nixon" className="fa fa-facebook"></a>
               <a href="https://twitter.com/nixon_now?lang=en" className="fa fa-twitter"></a>

@@ -1,6 +1,6 @@
 body {
   background: #000000;
-  color: blue;
+  color: #EC0322;
   background-image: url("http://media.complex.com/campaigns/2014-q4/nixon-spectrum/mobile/nixon_cover.jpg");
   background-repeat: no-repeat;
   background-position: top;
@@ -17,6 +17,7 @@ body {
   color: #fff;
   display: block;
   font-weight: bold;
+  font-size: 1em;
   padding: 1em 3em;
   position: relative;
   text-transform: uppercase;
@@ -58,13 +59,9 @@ body {
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
+    opacity: 0; }
   to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
+    opacity: 1; } }
 
 .welcomeMsg {
   font-size: 3.4rem;
@@ -122,12 +119,17 @@ body {
 .watchLine {
   margin-top: 20%; }
 
+.mediaLine {
+  text-align: center;
+  font-size: 1.2em; }
+
 li > p {
-  color: green; }
+  color: #44585E; }
 
 .watchSpecs {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  font-size: 1.2em; }
 
 ul {
   width: 350px;
@@ -136,4 +138,19 @@ ul {
 
 .social__container {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-top: 3%; }
+
+footer {
+  text-align: center;
+  margin-top: 2%; }
+
+img {
+  width: auto;
+  height: auto; }
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  text-decoration: none; }
