@@ -3,7 +3,8 @@ body {
   color: blue;
   background-image: url("http://media.complex.com/campaigns/2014-q4/nixon-spectrum/mobile/nixon_cover.jpg");
   background-repeat: no-repeat;
-  background-position: top; }
+  background-position: top;
+  font-family: 'Poiret One', cursive; }
 
 .button {
   -webkit-transition: all 0.3s;
@@ -43,3 +44,74 @@ body {
     left: 0;
     top: 0;
     width: 100%; }
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; }
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+.welcomeMsg {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  color: #F0A3BE;
+  animation-name: fadeInUp;
+  animation-delay: .0s;
+  animation-duration: 10s; }
+
+.watchLine {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  color: #F0A3BE;
+  animation-name: fadeInUp;
+  animation-delay: .3s;
+  animation-duration: 15s; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px; }
+  .fa:hover {
+    opacity: 0.7; }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white; }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white; }
+
+.fa-instagram {
+  background: #125688;
+  color: white; }
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white; }
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white; }
